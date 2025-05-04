@@ -1,0 +1,106 @@
+/* Quiz.css */
+
+.quiz-container {
+    padding: 2rem;
+    max-width: 4xl; /* Equivalent to Tailwind's max-w-4xl */
+    margin: 0 auto;
+    background-color: #f7fafc; /* Light gray background */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .quiz-title {
+    text-align: center;
+    font-size: 1.5rem; /* Tailwind's text-xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+    color: #2d3748; /* Dark gray text */
+  }
+  
+  .question-card {
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+    padding: 1rem; /* Tailwind's p-4 */
+    border: 1px solid #e0e6ed; /* Gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  }
+  
+  .question-text {
+    margin-bottom: 0.75rem; /* Tailwind's mb-3 */
+    font-weight: 500; /* Tailwind's font-medium */
+    color: #4a5568; /* Medium gray text */
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+    gap: 0.75rem; /* Tailwind's gap-3 */
+  }
+  
+  .option-button {
+    display: inline-block;
+    padding: 0.5rem; /* Tailwind's p-2 */
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: #2d3748; /* Dark gray text */
+  }
+  
+  .option-button:hover {
+    background-color: #edf2f7; /* Light hover background */
+  }
+  
+  .option-button.selected {
+    background-color: #3b82f6; /* Blue selected background */
+    color: #fff; /* White selected text */
+    border-color: #3b82f6; /* Blue selected border */
+  }
+  
+  .option-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .feedback-correct {
+    margin-top: 0.5rem; /* Tailwind's mt-2 */
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    color: #22c55e; /* Green text for correct */
+  }
+  
+  .feedback-incorrect {
+    margin-top: 0.5rem; /* Tailwind's mt-2 */
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    color: #ef4444; /* Red text for incorrect */
+  }
+  
+  .correct-answer {
+    font-weight: 500; /* Tailwind's font-medium */
+    color: #4a5568; /* Medium gray text */
+  }
+  
+  .submit-button-container {
+    text-align: center;
+    margin-top: 1.5rem; /* Tailwind's mt-6 */
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1.5rem; /* Tailwind's px-6 py-2 */
+    background-color: #10b981; /* Green submit button background */
+    color: #fff; /* White submit button text */
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    background-color: #059669; /* Darker green hover background */
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #718096; /* Gray loading text */
+  }
